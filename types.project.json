@@ -1,0 +1,13 @@
+{
+  "name": "theme-types",
+  "tree": {
+    "$className": "DataModel",
+    "theme-types": {
+      "$path": "Packages",
+      "$ignoreUnknownInstances": true,
+      "theme-types": {
+        "$path": "src"
+      }
+    }
+  }
+}
