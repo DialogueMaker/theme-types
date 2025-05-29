@@ -1,9 +1,10 @@
 --!strict
 
-local React = require("@pkg/react");
-local IDialogueClient = require("@pkg/dialogue_client_types");
-local IDialogueServer = require("@pkg/dialogue_server_types");
-local IDialogue = require("@pkg/dialogue_types");
+local packages = script.Parent.roblox_packages;
+local React = require(packages.react);
+local IDialogueClient = require(packages.dialogue_client_types);
+local IDialogueServer = require(packages.dialogue_server_types);
+local IDialogue = require(packages.dialogue_types);
 
 type Dialogue = IDialogue.Dialogue;
 type DialogueClient = IDialogueClient.DialogueClient;
