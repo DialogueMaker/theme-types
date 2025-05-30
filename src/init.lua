@@ -2,17 +2,17 @@
 
 local packages = script.Parent.roblox_packages;
 local React = require(packages.react);
-local IDialogueClient = require(packages.dialogue_client_types);
-local IDialogueServer = require(packages.dialogue_server_types);
+local IClient = require(packages.client_types);
+local IConversation = require(packages.conversation_types);
 local IDialogue = require(packages.dialogue_types);
 
 type Dialogue = IDialogue.Dialogue;
-type DialogueClient = IDialogueClient.DialogueClient;
-type DialogueServer = IDialogueServer.DialogueServer;
+type Client = IClient.Client;
+type Conversation = IConversation.Conversation;
 
 export type ThemeProperties = {
-  dialogueClient: DialogueClient;
-  dialogueServer: DialogueServer;
+  client: Client;
+  conversation: Conversation;
   dialogue: Dialogue;
   npc: Model;
   onComplete: (newParent: Dialogue?) -> ();
